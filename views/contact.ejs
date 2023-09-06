@@ -1,4 +1,30 @@
 <%- include("partials/header"); -%>
     <h1>Contact</h1>
-    <p> <%= contactContent %> </p>
+    <p> <div class="container d-flex justify-content-center align-items-center">
+	
+	
+	<form action="mailto:chandakrushikesh30@gmail.com" method="post">
+		<h1 class="title text-center mb-4">Talk to Us</h1>
+
+			<!-- Name -->
+			<div class="form-group position-relative">
+				<label for="formName" class="d-block">
+					<i class="icon" data-feather="user"></i>
+				</label>
+				<input type="text" id="formName" class="form-control form-control-lg thick" placeholder="Name">
+			</div>
+
+			
+			<!-- Message -->
+			<div class="form-group message">
+				<textarea id="formMessage" class="form-control form-control-lg" rows="7" placeholder="Mensagem"></textarea>
+			</div>
+		
+			<!-- Submit btn -->
+			<div class="text-center">
+				<button type="submit" class="btn btn-primary" tabIndex="-1">Send message</button>
+			</div>
+	</form>
+	
+</div> </p>
 <%- include("partials/footer"); -%>
